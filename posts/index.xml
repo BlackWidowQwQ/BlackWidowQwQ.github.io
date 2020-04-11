@@ -20,5 +20,14 @@
       <description>这是里Phonon.的第一篇微博 希望能写出满意的东西</description>
     </item>
     
+    <item>
+      <title>My Second blog</title>
+      <link>http://example.org/posts/my-second-blog-/</link>
+      <pubDate>Fri, 10 Apr 2020 21:13:21 +0800</pubDate>
+      
+      <guid>http://example.org/posts/my-second-blog-/</guid>
+      <description>这是里Phonon.的第二篇博客 劳资最酷</description>
+    </item>
+    
   </channel>
 </rss>
