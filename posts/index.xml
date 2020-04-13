@@ -29,5 +29,21 @@
       <description>这是里Phonon.的第二篇博客 劳资最酷</description>
     </item>
     
+    <item>
+      <title>如何用Hugo搭建博客</title>
+      <link>http://example.org/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Fri, 10 Apr 2020 21:13:21 +0800</pubDate>
+      
+      <guid>http://example.org/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>这里是如何用Hugo搭建博客的方法 第一篇技术博，准备好了么，开始启程   安装Hugo
+  去Hugo releases页面下载hugo-windows-64bit.zip
+  解压，把hugo.exe放到你喜爱的路径中，并把路径加入到Path
+  重启终端，检查hugo version
+    开始搭建博客
+  进入Hugo官网，click Quick Start
+  创建新目录 hugo new site + 新目录名
+  hugo new site yiweishuaige.github.io-generator  加载主题  cd yiweishuaige.github.io-generator; git init; git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke;  下载完后加入主题到配置  echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  创建博客内容,draft 改为false  hugo new posts/my-first-post.md  启动Hugo服务区，预览草稿  hugo server -D  自定义主题，打开config.</description>
+    </item>
+    
   </channel>
 </rss>

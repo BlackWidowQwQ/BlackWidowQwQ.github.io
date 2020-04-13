@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>如何用Hugo搭建博客 - 一位帅哥</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="一位帅哥" rel="home">
+				<div class="logo__title">一位帅哥</div>
+				
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">如何用Hugo搭建博客</h1>
+			
+		</header><div class="content post__content clearfix">
+			<h1 id="这里是如何用hugo搭建博客的方法">这里是如何用Hugo搭建博客的方法</h1>
+<h2 id="第一篇技术博准备好了么开始启程">第一篇技术博，准备好了么，开始启程</h2>
+<ol>
+<li>
+<p><strong>安装Hugo</strong></p>
+<ul>
+<li>
+<p>去<a href="https://github.com/gohugoio/hugo/releases">Hugo releases</a>页面下载hugo-windows-64bit.zip</p>
+</li>
+<li>
+<p>解压，把hugo.exe放到你喜爱的路径中，并把路径加入到Path</p>
+</li>
+<li>
+<p>重启终端，检查hugo version</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>开始搭建博客</strong></p>
+<ul>
+<li>
+<p>进入<a href="https://gohugo.io/">Hugo</a>官网，click Quick Start</p>
+</li>
+<li>
+<p>创建新目录 <em>hugo new site + 新目录名</em></p>
+</li>
+</ul>
+<pre><code>hugo new site yiweishuaige.github.io-generator
+</code></pre><ul>
+<li>加载主题</li>
+</ul>
+<pre><code>cd yiweishuaige.github.io-generator;
+git init;
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke;
+</code></pre><ul>
+<li>下载完后加入主题到配置</li>
+</ul>
+<pre><code>echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
+</code></pre><ul>
+<li>创建博客内容,draft 改为false</li>
+</ul>
+<pre><code>hugo new posts/my-first-post.md
+</code></pre><ul>
+<li>启动Hugo服务区，预览草稿</li>
+</ul>
+<pre><code>hugo server -D
+</code></pre><ul>
+<li>自定义主题，打开config.toml,语言改为zh-Hans
+*建立静态页面</li>
+</ul>
+<pre><code>hugo -D
+</code></pre></li>
+<li>
+<p><strong>git储存</strong></p>
+<h3 id="得到的一个public目录这是博客的站点目录">得到的一个public目录，这是博客的站点目录</h3>
+<ul>
+<li>.gitignore 忽略 /public/</li>
+<li>加入git</li>
+</ul>
+</li>
+</ol>
+<pre><code>cd /public/
+git init
+git add .
+git commit
+</code></pre><ol start="4">
+<li><strong>上传到github</strong>
+<ul>
+<li>create a new repo namely yiweishuaige.github.io</li>
+<li>git remote add origin +地址</li>
+<li>git push -u origin master</li>
+</ul>
+</li>
+</ol>
+
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 一位帅哥.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
